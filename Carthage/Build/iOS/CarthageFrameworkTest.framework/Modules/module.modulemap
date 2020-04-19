@@ -1,6 +1,0 @@
-framework module CarthageFrameworkTest {
-  umbrella header "CarthageFrameworkTest.h"
-
-  export *
-  module * { export * }
-}
