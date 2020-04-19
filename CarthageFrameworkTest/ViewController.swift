@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 public class ViewController: UIViewController {
 
@@ -15,10 +16,13 @@ public class ViewController: UIViewController {
 
     let label = UILabel()
     label.text = "TEST"
-
     view.addSubview(label)
 
-    label.center = view.center
-    label.sizeToFit()
+//    label.center = view.center
+//    label.sizeToFit()
+
+    label.snp.makeConstraints { (maker) in
+      maker.center.equalTo(view.center)
+    }
   }
 }
